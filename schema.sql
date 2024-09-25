@@ -35,3 +35,16 @@ CREATE TABLE "connections_with_people" (
     CHECK ("user1_id" != "user2_id")
 
 );
+
+CREATE TABLE "connections_with_schools" (
+    "id" INTEGER,
+    "user_id" INTEGER,
+    "school_id" INTEGER,
+    "start_date" NUMERIC NOT NULL,
+    "end_date" NUMERIC NOT NULL,
+    "degree" TEXT NOT NULL,
+    PRIMARY KEY ("id"),
+    FOREIGN KEY ("user_id") REFERENCES "users"("id"),
+    FOREIGN KEY ("school_id") REFERENCES "schools_and_universities"("id")
+
+);
