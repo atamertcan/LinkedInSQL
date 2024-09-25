@@ -6,3 +6,13 @@ CREATE TABLE "users" (
     "password" TEXT NOT NULL,
     PRIMARY KEY ("id")
 );
+
+CREATE TABLE "schools_and_universities" (
+    "id" INTEGER,
+    "name" TEXT NOT NULL,
+    "type" TEXT NOT NULL,
+    "location" TEXT NOT NULL,
+    "year" INTEGER NOT NULL,
+    PRIMARY KEY ("id")
+
+);
