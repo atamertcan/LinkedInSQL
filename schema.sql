@@ -14,6 +14,15 @@ CREATE TABLE "users" (
     PRIMARY KEY ("id")
 );
 
+-- Schools and Universities
+-- LinkedIn also allows for official school or university accounts, such as that for Harvard,
+-- so alumni (i.e., those who’ve attended) can identify their affiliation.
+-- Ensure that LinkedIn’s database can store the following information about each school:
+--     * The name of the school
+--     * The type of school (e.g., “Elementary School”, “Middle School”, “High School”, “Lower School”, “Upper School”, “College”, “University”, etc.)
+--     * The school’s location
+--     * The year in which the school was founded
+
 CREATE TABLE "schools_and_universities" (
     "id" INTEGER,
     "name" TEXT NOT NULL,
