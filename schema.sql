@@ -32,6 +32,14 @@ CREATE TABLE "schools_and_universities" (
     PRIMARY KEY ("id")
 );
 
+-- Companies
+-- LinkedIn allows companies to create their own pages, like the one for LinkedIn itself,
+-- so employees can identify their past or current employment with the company.
+-- Ensure that LinkedIn’s database can store the following information for each company:
+--     * The name of the company
+--     * The company’s industry (e.g., “Education”, “Technology, “Finance”, etc.)
+--     * The company’s location
+
 CREATE TABLE "companies" (
     "id" INTEGER,
     "name" TEXT NOT NULL,
