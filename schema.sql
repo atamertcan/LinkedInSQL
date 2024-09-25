@@ -86,6 +86,14 @@ CREATE TABLE "connections_with_schools" (
 
 );
 
+-- Connections with Companies
+-- A user should be able to create an affiliation with a given company.
+-- And similarly, a company should be able to find its current and past employees.
+-- Additionally, allow a user to define:
+--     * The start date of their affiliation (i.e., the date they began work with the company)
+--     * The end date of their affiliation (i.e., when left the company), if applicable
+--     * The title they held while affiliated with the company
+
 CREATE TABLE "connections_with_companies" (
     "id" INTEGER,
     "user_id" INTEGER,
