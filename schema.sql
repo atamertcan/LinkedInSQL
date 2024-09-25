@@ -48,6 +48,11 @@ CREATE TABLE "companies" (
     PRIMARY KEY ("id")
 );
 
+-- Connections with People
+-- LinkedIn’s database should be able to represent mutual (reciprocal, two-way) connections between users.
+-- No need to worry about one-way connections, such as user A “following” user B without user B “following” user A.
+
+
 CREATE TABLE "connections_with_people" (
     "id" INTEGER,
     "user1_id" INTEGER,
