@@ -48,3 +48,16 @@ CREATE TABLE "connections_with_schools" (
     FOREIGN KEY ("school_id") REFERENCES "schools_and_universities"("id")
 
 );
+
+CREATE TABLE "connections_with_companies" (
+    "id" INTEGER,
+    "user_id" INTEGER,
+    "company_id" INTEGER
+    "start_date" NUMERIC NOT NULL,
+    "end_date" NUMERIC,
+    "title" TEXT NOT NULL,
+    PRIMARY KEY ("id"),
+    FOREIGN KEY ("user_id") REFERENCES "users"("id"),
+    FOREIGN KEY ("company_id") REFERENCES "companies"("id")
+
+);
