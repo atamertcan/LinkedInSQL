@@ -8,3 +8,4 @@ Made for CS50-SQL course.
 - Task at hand is to create a SQLite database for LinkedIn from scratch
 
 
+<p align = "center"><img src="https://github.com/user-attachments/assets/395863de-3f8b-419d-a0f7-64daecbfb4d8"></p>
