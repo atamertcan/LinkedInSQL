@@ -14,7 +14,6 @@ CREATE TABLE "schools_and_universities" (
     "location" TEXT NOT NULL,
     "year" INTEGER NOT NULL,
     PRIMARY KEY ("id")
-
 );
 
 CREATE TABLE "companies" (
@@ -23,4 +22,16 @@ CREATE TABLE "companies" (
     "industry" TEXT NOT NULL,
     "location" TEXT NOT NULL,
     PRIMARY KEY ("id")
+);
+
+CREATE TABLE "connections_with_people" (
+    "id" INTEGER,
+    "user1_id" INTEGER,
+    "user2_id" INTEGER,
+    PRIMARY KEY ("id"),
+    FOREIGN KEY ("user1_id") REFERENCES "users"("id"),
+    FOREIGN KEY ("user2_id") REFERENCES "users"("id"),
+    UNIQUE ("user1_id", "user2_id"),
+    CHECK ("user1_id" != "user2_id")
+
 );
