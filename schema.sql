@@ -65,6 +65,14 @@ CREATE TABLE "connections_with_people" (
 
 );
 
+-- Connections with Schools
+-- A user should be able to create an affiliation with a given school.
+-- And similarly, that school should be able to find its alumni.
+-- Additionally, allow a user to define:
+--     * The start date of their affiliation (i.e., when they started to attend the school)
+--     * The end date of their affiliation (i.e., when they graduated), if applicable
+--     * The type of degree earned/pursued (e.g., “BA”, “MA”, “PhD”, etc.)
+
 CREATE TABLE "connections_with_schools" (
     "id" INTEGER,
     "user_id" INTEGER,
